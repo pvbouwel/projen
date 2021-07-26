@@ -7153,6 +7153,22 @@ addTask(name: string, options?: TaskOptions): Task
 __Returns__:
 * <code>[tasks.Task](#projen-tasks-task)</code>
 
+#### getFullEnvironment(task)🔹 <a id="projen-tasks-tasks-getfullenvironment"></a>
+
+Obtains the full runtime environment for a task.
+
+This defers evaluation of
+values using the $(xx) syntax.
+
+```ts
+getFullEnvironment(task: Task): Map<string, string>
+```
+
+* **task** (<code>[tasks.Task](#projen-tasks-task)</code>)  *No description*
+
+__Returns__:
+* <code>Map<string, string></code>
+
 #### preSynthesize()🔹 <a id="projen-tasks-tasks-presynthesize"></a>
 
 Called before synthesis.

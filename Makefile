@@ -54,7 +54,7 @@ bump:
 	export OUTFILE=package.json
 	export CHANGELOG=dist/changelog.md
 	export BUMPFILE=dist/version.txt
-	/Users/rybickic/.nvm/versions/node/v14.16.1/bin/node /Users/rybickic/Developer/projen/lib/release/bump-version.task.js
+	/__t/node/10.17.0/x64/bin/node /__w/projen/projen/lib/release/bump-version.task.js
 
 .PHONY: unbump
 unbump:
@@ -62,7 +62,7 @@ unbump:
 	export OUTFILE=package.json
 	export CHANGELOG=dist/changelog.md
 	export BUMPFILE=dist/version.txt
-	/Users/rybickic/.nvm/versions/node/v14.16.1/bin/node /Users/rybickic/Developer/projen/lib/release/reset-version.task.js
+	/__t/node/10.17.0/x64/bin/node /__w/projen/projen/lib/release/reset-version.task.js
 
 .PHONY: upgrade-dependencies
 upgrade-dependencies:
